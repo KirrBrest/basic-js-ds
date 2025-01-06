@@ -19,15 +19,10 @@ class Stack {
   }
 
   push(element) {
-    //throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
-    // const push = (element) => this.push(element);
     this.items.push(element);
   }
 
   pop() {
-    // throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
     if (this.items.length == 0) {
       return "No place";
     } else {
@@ -36,8 +31,6 @@ class Stack {
   }
 
   peek() {
-    // throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
     return this.items[this.items.length - 1];
   }
 }
