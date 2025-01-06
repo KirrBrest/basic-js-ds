@@ -24,9 +24,24 @@ class BinarySearchTree {
     this.root = null;
   }
 
-  add(/* data */) {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+  add(data) {
+    if (this.root === null) {
+      this.root = new Node(data);
+    } else {
+      const node = this.root;
+      const setTree = node => {
+        if (data < node.value && node.left) {
+          setTree(node.left);
+        } else if (data < node.value) {
+          node.left = new Node(data);
+        } else if (data > node.value && node.right) {
+          setTree(node.right);
+        } else if (data > node.value) {
+          node.right = new Node(data);
+        }
+      }
+      return setTree(node);
+    }
   }
 
   has(/* data */) {
