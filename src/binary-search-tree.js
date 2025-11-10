@@ -1,68 +1,44 @@
-const { NotImplementedError } = require('../extensions/index.js');
-
+const { NotImplementedError } = require('../lib/errors');
 // const { Node } = require('../extensions/list-tree.js');
 
 /**
 * Implement simple binary search tree according to task description
 * using Node from extensions
 */
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.left = null;
-    this.right = null;
-  }
-}
-
 class BinarySearchTree {
-
   root() {
-    this.root = null;
-  }
-
-  add(data) {
-    if (this.root === null) {
-      this.root = new Node(data);
-    } else {
-      const node = this.root;
-      const setTree = node => {
-        if (data < node.value && node.left) {
-          setTree(node.left);
-        } else if (data < node.value) {
-          node.left = new Node(data);
-        } else if (data > node.value && node.right) {
-          setTree(node.right);
-        } else if (data > node.value) {
-          node.right = new Node(data);
-        }
-      }
-      return setTree(node);
-    }
-  }
-
-  has(/* data */) {
+    // Remove line below and write your code here
     throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+  }
+
+  add(/* data */) {
+    // Remove line below and write your code here
+    throw new NotImplementedError('Not implemented');
   }
 
   find(/* data */) {
+    // Remove line below and write your code here
     throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+  }
+
+  has(/* data */) {
+    // Remove line below and write your code here
+    throw new NotImplementedError('Not implemented');
   }
 
   remove(/* data */) {
+    // Remove line below and write your code here
     throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
   }
 
   min() {
+    // Remove line below and write your code here
     throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
   }
 
   max() {
+    // Remove line below and write your code here
     throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
   }
 }
 

@@ -1,6 +1,5 @@
-const { NotImplementedError } = require('../extensions/index.js');
-
- const { ListNode } = require('../extensions/list-node.js');
+const { NotImplementedError } = require('../lib/errors');
+// const { ListNode } = require('../extensions/list-node.js');
 
 /**
  * Implement the Queue with a given interface via linked list (use ListNode extension above).
@@ -13,52 +12,20 @@ const { NotImplementedError } = require('../extensions/index.js');
  * queue.dequeue(); // returns the top element from queue and deletes it, returns 1
  * queue.getUnderlyingList() // returns { value: 3, next: null }
  */
-
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
-}
 class Queue {
-
-  constructor () {
-    this.first = null;
-    this.last = null;
-    this.length = 0;
-  }
-
   getUnderlyingList() {
-    return this.first;
+    // Remove line below and write your code here
+    throw new NotImplementedError('Not implemented');
   }
 
-  enqueue(value) {
-   
-
-    const NewNode = new Node(value);
-    if (this.length ===0) {
-      this.first = NewNode;
-      this.last = NewNode;
-    } else {
-      this.last.next = NewNode;
-      this.last = NewNode;
-    }
-    this.length++;
-    return this;
+  enqueue(/* value */) {
+    // Remove line below and write your code here
+    throw new NotImplementedError('Not implemented');
   }
 
   dequeue() {
-
-    if (!this.first) {
-      return null;
-    }
-    if (this.first === this.last) {
-      this.last = null;
-    }
-    const hodlingPointer = this.first;
-    this.first = this.first.next;
-    this.length--;
-    return hodlingPointer.value;
+    // Remove line below and write your code here
+    throw new NotImplementedError('Not implemented');
   }
 }
 
