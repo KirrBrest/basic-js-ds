@@ -23,11 +23,7 @@ class Stack {
   }
 
   pop() {
-    if (this.items.length == 0) {
-      return "No place";
-    } else {
-      return this.items.pop();
-    }
+    return this.items.pop();
   }
 
   peek() {

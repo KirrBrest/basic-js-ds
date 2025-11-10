@@ -17,10 +17,6 @@ class Node {
 class BinarySearchTree {
 
   root() {
-
-    // if (this.root === null) {
-    //   this.root = new Node();
-    // }
     this.root = null;
   }
 

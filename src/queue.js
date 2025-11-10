@@ -21,12 +21,6 @@ class Node {
   }
 }
 class Queue {
-  // list;
-  // constructor () {
-  //   this.values = {};
-  //   this.head = 0;
-  //   this.tail = 0;
-  // }
 
   constructor () {
     this.first = null;
@@ -35,24 +29,11 @@ class Queue {
   }
 
   getUnderlyingList() {
-    // const item = this.values;
-    // console.debug(item);
-    // return item;
     return this.first;
   }
 
   enqueue(value) {
    
-    // this.values[this.tail] = value;
-    // this.tail++;
-    // return value;
-
-    // let current = this.list;
-    // if (!current) {
-    //   this.list = new ListNode(value);
-    //   return this;
-    // }
-    // this.next++;
 
     const NewNode = new Node(value);
     if (this.length ===0) {
@@ -67,10 +48,6 @@ class Queue {
   }
 
   dequeue() {
-    // const item = this.values[this.head];
-    // delete this.values[this.head];
-    // this.head++;
-    // return item;
 
     if (!this.first) {
       return null;
